@@ -1,0 +1,26 @@
+server:
+  port: 9993
+
+spring:
+  application:
+    name: SERVICE-CONSUMER #不要使用下划线
+
+feign:
+   hystrix:
+     enabled: true #开启熔断支持
+   client:
+     config:
+       remote-service:           #服务名，填写default为所有服务
+         connectTimeout: 3000
+         readTimeout: 3000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
+
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
