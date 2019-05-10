@@ -2,4 +2,5 @@ server:
   port: 8883
 spring:
   application:
-    name: SERVICE-PROVIDER #╡╩р╙й╧сцоб╩╝оъ
+    #Д╦█Х╕│Д╫©Г■╗Д╦▀Е┬▓Г╨©
+    name: SERVICE-PROVIDER 

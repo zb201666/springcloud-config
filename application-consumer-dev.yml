@@ -3,14 +3,17 @@ server:
 
 spring:
   application:
-    name: SERVICE-CONSUMER #不要使用下划线
+    #不要使用下划线
+    name: SERVICE-CONSUMER 
 
 feign:
    hystrix:
-     enabled: true #开启熔断支持
+     #开启熔断支持
+     enabled: true 
    client:
      config:
-       remote-service:           #服务名，填写default为所有服务
+       remote-service:   
+         #服务名，填写default为所有服务
          connectTimeout: 3000
          readTimeout: 3000
 hystrix:
